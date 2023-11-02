@@ -1,0 +1,97 @@
+body {
+  background-image: repeating-conic-gradient(
+    rgb(0, 253, 114) 10%,
+    rgb(229, 229, 91) 20%
+  );
+}
+/* alt under header ligger under */
+#header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  right: 0rem;
+  left: 0rem;
+  top: 0rem;
+}
+#header li {
+  float: left;
+  border-right: 0.1rem solid #bbb;
+}
+
+#header li:last-child {
+  border-right: none;
+}
+
+#header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1rem 0.7rem;
+  text-decoration: none;
+}
+
+#header li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4a5450;
+}
+
+/* all under kapcontent ligger under */
+#kapcontent {
+  margin-top: 3rem;
+  width: 20%;
+  height: 94%;
+  float: left;
+  position: fixed;
+  border-radius: 0.6rem;
+}
+#kapittel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #e6e6e6;
+  padding-top: 0.6rem;
+  padding-left: 5rem;
+  padding-bottom: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+/* alt innenfor overview ligger under */
+#overview {
+  margin-top: 3rem;
+  width: 79.4%;
+  height: 100%;
+  float: right;
+  position: relative;
+  z-index: -1;
+  border-radius: 0.6rem;
+}
+
+#overview h2 {
+  text-align: center;
+}
+#mb1intro {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #e6e6e6;
+  padding: 1rem 4rem;
+  border-radius: 0.6rem;
+}
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 3rem;
+  background-color: #e6e6e6;
+  padding: 1rem 4rem;
+  border-radius: 0.6rem;
+}
