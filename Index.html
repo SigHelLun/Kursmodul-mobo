@@ -8,9 +8,10 @@
   </head>
   <body>
     <div id="header">
-        <li><a class="active" href="Index.html">Motherboard</a></li>
+      <p></p>
+      <!-- <li><a class="active" href="Index.html">Motherboard</a></li>
         <li><a href="#kontakt">Kontakt</a></li>
-        <li style="float:right"><a href="#log-in">log-in</a></li>
+        <li style="float:right"><a href="#log-in">log-in</a></li> -->
     </div>
 
     <div id="overview">
@@ -32,10 +33,18 @@
       </div>
 
       <div id="video">
-        <video width="700rem" controls>
-          <source src="images-video/depair.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-        </video>
+      </div>
+
+      <div id="quiz">
+        <h4>question 1</h4>
+        <p id="question1">Ka er 2 + 2</p>
+        <input type="text" id="input1">¨
+        <p id="answer1"> venter svar</p>
+
+        <p id="question2">Ka er 2 + 3</p>
+        <input type="checkbox" id="feilBu">green</input> <input type="checkbox" id="feilBu">blue</input> <input type="checkbox" id="Bu5" onclick="FemBu()">5</input>
+        <p id="answer2"> venter svar</p>
+        <button onclick="quiztest()">sjekk svar</button>
       </div>
 
   </div>
