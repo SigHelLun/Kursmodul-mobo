@@ -4,48 +4,77 @@
   B6FFFA lys
 */
 body {
-  background-image: repeating-conic-gradient(
-    #B6FFFA 10%,
+/*   background-image: repeating-conic-gradient(
+   #B6FFFA 10%,
     #98E4FF 20%
-  );
+  ); */
+  background-color: #98E4FF;
+}
+
+.navbar header{
+  width: 100%;
+  height: 20rem;
+}
+.navbar ul{
+font-family: var(--font-serif);
+overflow-wrap: break-word;
+line-height: 1.8;
+-webkit-text-size-adjust: 100%;
+--font-serif: "IBM Plex Serif", serif;
+--font-sans: "IBM Plex Sans", sans-serif;
+--font-mono: "IBM Plex Mono", monospace;
+--font-main-title: "Phantom Sans", "IBM Plex Serif", serif;
+--toc-width: 0px;
+font-size: .95em;
+box-sizing: border-box;
+padding: 3px 0 4px;
+margin: 0;
+list-style-type: none;
+display: flex;
+gap: 16px;
+align-items: center;
+justify-content: center;
+}
+.navbar li{
+  font-family: var(--font-serif);
+  overflow-wrap: break-word;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+  --font-serif: "IBM Plex Serif", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-main-title: "Phantom Sans", "IBM Plex Serif", serif;
+  --toc-width: 0px;
+  font-size: .95em;
+  list-style-type: none;
+  box-sizing: border-box;
+  position: relative;
+  transition: opacity .2s ease-in-out;
+  opacity: 0.2;
+}
+.navbar a{
+  font-family: var(--font-serif);
+  -webkit-text-size-adjust: 100%;
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0.5em 0.4em;
 }
 /* alt under header ligger under */
 #header {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0rem;
+  padding: 1rem;
   overflow: hidden;
-  background-color: #333;
+  background-color: #687EFF;
   position: fixed;
   right: 0rem;
   left: 0rem;
   top: 0rem;
 }
 
-/* #header li {
-  float: left;
-  border-right: 0.1rem solid #bbb;
-}
-
-#header li:last-child {
-  border-right: none;
-}
-
-#header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1rem 0.7rem;
-  text-decoration: none;
-}
-
-#header li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4a5450;
-} */
 
 /* all under kapcontent ligger under */
 #kapcontent {
@@ -61,7 +90,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  background-color: #ffffff;
+  background-color: #B6FFFA;
   padding-top: 0.6rem;
   padding-left: 5rem;
   padding-bottom: 0.6rem;
@@ -87,9 +116,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  background-color: #ffffff;
-  padding: 1rem 4rem;
+  background-color: #B6FFFA;
+  padding: 2rem 4rem;
   border-radius: 0.6rem;
+
+}
+#mb1intro img{
+ width: 100%;
 }
 #video {
   display: block;
@@ -97,7 +130,7 @@ body {
   margin-right: auto;
   width: 40%;
   margin-top: 3rem;
-  background-color: #fffdfd;
+  background-color: #B6FFFA;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
 }
@@ -107,7 +140,7 @@ body {
   margin-right: auto;
   width: 40%;
   margin-top: 3rem;
-  background-color: #ffffff;
+  background-color: #B6FFFA;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
 

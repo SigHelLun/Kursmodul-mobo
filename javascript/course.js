@@ -14,15 +14,6 @@ else {
 };
 //question 2
 const Bu5 = document.getElementById('Bu5');
-
-
-
-
-
-
-
-
-
-
 }
+
 
