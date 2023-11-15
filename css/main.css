@@ -1,14 +1,10 @@
-/*687EFF mørk
-  80B3FF
-  98E4FF
-  B6FFFA lys
-*/
+
 body {
-/*   background-image: repeating-conic-gradient(
-   #B6FFFA 10%,
-    #98E4FF 20%
-  ); */
-  background-color: #98E4FF;
+  background-image: repeating-conic-gradient(
+   red 10%,
+    yellow 20%
+  );
+
 }
 
 .navbar header{
@@ -62,6 +58,9 @@ justify-content: center;
   line-height: 1.4;
   padding: 0.5em 0.4em;
 }
+.navbar a :hover{
+  
+}
 /* alt under header ligger under */
 #header {
   list-style-type: none;
@@ -90,7 +89,7 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  background-color: #B6FFFA;
+  background-color: #ffff;
   padding-top: 0.6rem;
   padding-left: 5rem;
   padding-bottom: 0.6rem;
@@ -116,21 +115,21 @@ justify-content: center;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  background-color: #B6FFFA;
+  background-color: #ffff;
   padding: 2rem 4rem;
   border-radius: 0.6rem;
 
 }
-#mb1intro img{
- width: 100%;
+#mb1intro video{
+  width: 100%;
 }
-#video {
+#kap2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
   margin-top: 3rem;
-  background-color: #B6FFFA;
+  background-color: #ffff;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
 }
@@ -140,7 +139,7 @@ justify-content: center;
   margin-right: auto;
   width: 40%;
   margin-top: 3rem;
-  background-color: #B6FFFA;
+  background-color: #ffff;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
 
