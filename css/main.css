@@ -1,77 +1,10 @@
 
-body {
+body {/* 
   background-image: repeating-conic-gradient(
    red 10%,
     yellow 20%
-  );
-
-}
-
-.navbar header{
-  width: 100%;
-  height: 20rem;
-}
-.navbar ul{
-font-family: var(--font-serif);
-overflow-wrap: break-word;
-line-height: 1.8;
--webkit-text-size-adjust: 100%;
---font-serif: "IBM Plex Serif", serif;
---font-sans: "IBM Plex Sans", sans-serif;
---font-mono: "IBM Plex Mono", monospace;
---font-main-title: "Phantom Sans", "IBM Plex Serif", serif;
---toc-width: 0px;
-font-size: .95em;
-box-sizing: border-box;
-padding: 3px 0 4px;
-margin: 0;
-list-style-type: none;
-display: flex;
-gap: 16px;
-align-items: center;
-justify-content: center;
-}
-.navbar li{
-  font-family: var(--font-serif);
-  overflow-wrap: break-word;
-  line-height: 1.8;
-  -webkit-text-size-adjust: 100%;
-  --font-serif: "IBM Plex Serif", serif;
-  --font-sans: "IBM Plex Sans", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
-  --font-main-title: "Phantom Sans", "IBM Plex Serif", serif;
-  --toc-width: 0px;
-  font-size: .95em;
-  list-style-type: none;
-  box-sizing: border-box;
-  position: relative;
-  transition: opacity .2s ease-in-out;
-  opacity: 0.2;
-}
-.navbar a{
-  font-family: var(--font-serif);
-  -webkit-text-size-adjust: 100%;
-  list-style-type: none;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  line-height: 1.4;
-  padding: 0.5em 0.4em;
-}
-.navbar a :hover{
-  
-}
-/* alt under header ligger under */
-#header {
-  list-style-type: none;
-  margin: 0rem;
-  padding: 1rem;
-  overflow: hidden;
-  background-color: #687EFF;
-  position: fixed;
-  right: 0rem;
-  left: 0rem;
-  top: 0rem;
+  ); */
+background-color: #687EFF;
 }
 
 
@@ -120,9 +53,11 @@ justify-content: center;
   border-radius: 0.6rem;
 
 }
-#mb1intro video{
+#mb1intro iframe{
   width: 100%;
+  height: 30rem;
 }
+/* neddenfor alt innen kap2 content */
 #kap2 {
   display: block;
   margin-left: auto;
@@ -133,6 +68,31 @@ justify-content: center;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
 }
+
+.dropdown-content {
+  display: none;
+  padding: 0.2rem 1rem;
+}
+
+
+.dropdown-btn {
+  margin-top: 1rem;
+  background-color: #e6e2e2;
+  color: black;
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  text-align: left;
+  font-size: medium;
+  white-space: pre;
+  border-radius: 0.6rem;
+}
+.dropdown-btn :hover{
+  background-color: #b8b8b8;
+}
+
+/* quiz neddover */
 #quiz {
   display: block;
   margin-left: auto;

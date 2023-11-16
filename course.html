@@ -7,18 +7,6 @@
     <title>kursmodul</title>
   </head>
   <body>
-
-<div class="navbar">
-  <header>
-    
-  <ul>
-    <li><a href="#">Hovudkort-intro <br>kap1</li></a>
-    <li><a href="#">test <br>kap2</li></a>
-    <li><a href="#">test <br>kap3</li></a>
-    <li><a href="#">test <br>kap4</li></a>
-  </ul>
-</header>
-</div>
     <div id="overview">
       <div id="mb1intro">
       <h2>Hovudkort intro</h1>
@@ -28,25 +16,30 @@
          Kroppen din har som ansvar å sirkulere energi som du bruker til å bevege deg. 
          Kroppen din kobraer og alt saman med kablar/blodåre. Dette gjer nemleg hovudkorte og den er med på å sirkulere strøym gjennom seg sjølv,
           og tilkopla alle komponentar som CPU/hjernen, GPU ram og så videre. </p>
-          <video controls>
-            <source src="images-video/Hovudkort.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCnzyFHyjc?si=h0rFt2knNdhOILiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>I denne modulen vil du lære:</p>
 	            <li>Ka et hovudkort er</li> 
 	            <li>Typar hovudkort</li>
 	            <li>Størrelse ATX</li>
-	            <li>valeige porter på hovudkort</li>
+	            <li>vanlige porter på hovudkort</li>
 
       </div>
 
       <div id="kap2">
-        <h2>Ka er eit Hovudkort</h2>
         <h4>Ka er eit Hovudkort...</h4>
         <p>Hovudkorte kort forklart er på enn måte eit medium som blir brukt til å kommunisere mellom dei elektroniske komponentane i  eit
            utvid bart pc system. I ATX standard hovudkort kan alltids finne ein
            CPU-sokkel, Memory-slot, I/O, CMOS og system klokke, PCH(eller AMD chipset) og eit temperatur-system, CPU & MB PWR port.
             Så eit hovudkort er eit komponent i din datamaskin som tilknytte alle dei elektroniske komponentane i din datamaskin.</p>
+
+        <button class="dropdown-btn" id="CPU" onclick="droptext()">CPU-socket</button>
+        <div class="dropdown-content" id="CPUdrop">
+        <p>AM-AMD og LGA -intel er dei mest populære standarane for CPU</p>
+        </div>
+        <button class="dropdown-btn" id="Memory-slot" onclick="droptext()">Memory-slot</button>
+        <div class="dropdown-content" id="Memorydrop">
+        <p>Dei fleste hovudkort bruker i dag DIMM slots der og SIMM som er litt sjeldnare.</p>
+        </div>
       </div>
 
       <div id="quiz">
