@@ -17,42 +17,18 @@ const Bu5 = document.getElementById('Bu5');
 }
 
 
+//
+function droptext(elementId) {
+    let dropElement = document.getElementById(elementId + "drop");
+    let buttonElement = document.getElementById(elementId);
 
-let CPUs = document.getElementById("CPU")
-let memory = document.getElementById("Memory-slot")
-/* let IO = document.getElementById("dropdown-btn")
-let CMOS = document.getElementById("dropdown-btn")
-let CMOSb = document.getElementById("dropdown-btn")
-let PCH = document.getElementById("dropdown-btn")
-let Temp = document.getElementById("dropdown-btn")
-let MBCPU = document.getElementById("dropdown-btn") */
-
-function droptext() {
-    let CPUdrop = document.getElementById("CPUdrop");
-    let Memorydrop = document.getElementById("Memorydrop")
-    if (CPUdrop.style.display === "block") {
-      CPUdrop.style.display = "none";
-      CPUs.textContent = CPUs.textContent -"▲";
-      CPUs.textContent = CPUs.textContent +"▼";
+    if (dropElement.style.display === "block") {
+        dropElement.style.display = "none";
+        buttonElement.textContent = buttonElement.textContent.replace("▲", "▼");
+    } else {
+        dropElement.style.display = "block";
+        buttonElement.textContent = buttonElement.textContent.replace("▼", "▲");
     }
-    else {
-        CPUdrop.style.display = "block";
-        CPUs.textContent = CPUs.textContent - "▼" 
-        CPUs.textContent = CPUs.textContent + "▲" 
-  
-      }
-    if (Memorydrop.style.display === "block") {
-        Memorydrop.style.display = "none";
-        memory.textContent = memory.textContent + CPUs.memory -"▲";
-        memory.textContent = memory.textContent + CPUs.memory +"▼";
-    }
-    else{
-        
-        CPUdrop.style.display = "block";
-        CPUs.textContent = CPUs.textContent - "▼" 
-        CPUs.textContent = CPUs.textContent + "▲" 
-    }
-    } 
-    
+}
 
   

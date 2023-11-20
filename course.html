@@ -16,7 +16,9 @@
          Kroppen din har som ansvar å sirkulere energi som du bruker til å bevege deg. 
          Kroppen din kobraer og alt saman med kablar/blodåre. Dette gjer nemleg hovudkorte og den er med på å sirkulere strøym gjennom seg sjølv,
           og tilkopla alle komponentar som CPU/hjernen, GPU ram og så videre. </p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCnzyFHyjc?si=h0rFt2knNdhOILiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCnzyFHyjc?si=h0rFt2knNdhOILiz" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+           gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>I denne modulen vil du lære:</p>
 	            <li>Ka et hovudkort er</li> 
 	            <li>Typar hovudkort</li>
@@ -26,21 +28,57 @@
       </div>
 
       <div id="kap2">
-        <h4>Ka er eit Hovudkort...</h4>
+        <h2>Ka er eit Hovudkort</h2>
         <p>Hovudkorte kort forklart er på enn måte eit medium som blir brukt til å kommunisere mellom dei elektroniske komponentane i  eit
            utvid bart pc system. I ATX standard hovudkort kan alltids finne ein
            CPU-sokkel, Memory-slot, I/O, CMOS og system klokke, PCH(eller AMD chipset) og eit temperatur-system, CPU & MB PWR port.
-            Så eit hovudkort er eit komponent i din datamaskin som tilknytte alle dei elektroniske komponentane i din datamaskin.</p>
+           Så eit hovudkort er eit komponent i din datamaskin som tilknytte alle dei elektroniske komponentane i din datamaskin.</p>
+           <div class="summerert">
+            <button class="dropdown-btn" id="CPU" onclick="droptext('CPU')">CPU-socket</button>
+              <div class="dropdown-content" id="CPUdrop">
+                <p>AM-AMD og LGA -intel er dei mest populære standarane for CPU</p>
+              </div><br>
 
-        <button class="dropdown-btn" id="CPU" onclick="droptext()">CPU-socket</button>
-        <div class="dropdown-content" id="CPUdrop">
-        <p>AM-AMD og LGA -intel er dei mest populære standarane for CPU</p>
-        </div>
-        <button class="dropdown-btn" id="Memory-slot" onclick="droptext()">Memory-slot</button>
-        <div class="dropdown-content" id="Memorydrop">
-        <p>Dei fleste hovudkort bruker i dag DIMM slots der og SIMM som er litt sjeldnare.</p>
-        </div>
+            <button class="dropdown-btn" id="Memory-slot" onclick="droptext('Memory')">Memory-slot</button>
+              <div class="dropdown-content" id="Memorydrop">
+                <p>Dei fleste hovudkort bruker i dag DIMM slots der og SIMM som er litt sjeldnare.</p>
+              </div><br>
+
+            <button class="dropdown-btn" id="IO" onclick="droptext('IO')">Input / Output</button>
+              <div class="dropdown-content" id="IOdrop">
+                <p>Input/output system brukt i alle ATX hovudkort for porter til eksterne system .Eksemplar USB, Display, Lyd, RJ45 port OSV</p>
+              </div><br>
+              
+            <button class="dropdown-btn" id="CMOS" onclick="droptext('CMOS')">CMOS</button>
+            <div class="dropdown-content" id="CMOSdrop">
+              <p>Nonvoletile BIOS minne er brukt til å lagre all BIOS settings.
+                 CMOS er SRAM så den kan miste alle BIOS settingane når den mister strøym derfor har me CMOS batteri til og hindre dette når PSU er av.</p>
+            </div><br>
+            <button class="dropdown-btn" id="clock" onclick="droptext('clock')">klokke batteriet</button>
+            <div class="dropdown-content" id="clockdrop">
+              <p>Hjelper med å gi strøym til CMOS når PSU er av. Gir strøym til CMOS. </p>
+            </div><br>
+            <button class="dropdown-btn" id="PCH" onclick="droptext('PCH')">PCH</button>
+            <div class="dropdown-content" id="PCHdrop">
+              <p>PCH tok plassen til enn gamal standard, nor sør chip arkitekturen. PCH tar av seg System klokke FDI DMI. CPU tar seg av I/O, PCIe-G, DDR, iGFX og IMC.</p>
+            </div><br>
+            <button class="dropdown-btn" id="Temp" onclick="droptext('Temp')">Temperatur system</button>
+            <div class="dropdown-content" id="Tempdrop">
+              <p>	Ser temperaturen til CPU til overclocking og temperatur skjekking </p>
+            </div><br>
+            <button class="dropdown-btn" id="PWR" onclick="droptext('PWR')">MB PWR og CPU PWR</button>
+            <div class="dropdown-content" id="PWRdrop">
+              <p>	Port til strøym til MB og CPU frå PSU</p>
+            </div><br>
+            <button class="dropdown-btn" id="BUS" onclick="droptext('BUS')">BUS/PCIE-slot</button>
+            <div class="dropdown-content" id="BUSdrop">
+              <p>	databus er ein type port brukt for rask overføring av data. PCIE-slot er ein databus på PC-en din som blir brukt til tilleggs kort som, GPU, Lydkort, Nettverks kort, SSD. Det er som oftast eit dedikert PCIe slot for GPU, ofte med raskare hastigheiter.</p>
+            </div><br>
       </div>
+      <div class="bilde">
+        <img src="images-video/mbcolorbox.png" alt="" width="100%">
+      </div>
+    </div>
 
       <div id="quiz">
         <h4>question 1</h4>

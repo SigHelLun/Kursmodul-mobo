@@ -67,11 +67,22 @@ background-color: #687EFF;
   background-color: #ffff;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
+  overflow: hidden;
+}
+.summerert{
+width: 50%;
+float: left;
+}
+.bilde{
+  width: 50%;
+  float: right;
+  
 }
 
 .dropdown-content {
   display: none;
   padding: 0.2rem 1rem;
+  width: 50%;
 }
 
 
@@ -83,13 +94,9 @@ background-color: #687EFF;
   border: none;
   cursor: pointer;
   width: 30%;
-  text-align: left;
   font-size: medium;
-  white-space: pre;
   border-radius: 0.6rem;
-}
-.dropdown-btn :hover{
-  background-color: #b8b8b8;
+
 }
 
 /* quiz neddover */
