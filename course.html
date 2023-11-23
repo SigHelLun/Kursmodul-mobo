@@ -12,15 +12,14 @@
       <h2>Hovudkort intro</h1>
       <h4>Fra starten...Hovudkort</h4>
 
-        <p>Ka er et hovudkort. Eit hovudkort er på ein måte ein tom kropp som barre har muskel og bein.
-         Kroppen din har som ansvar å sirkulere energi som du bruker til å bevege deg. 
-         Kroppen din kobraer og alt saman med kablar/blodåre. Dette gjer nemleg hovudkorte og den er med på å sirkulere strøym gjennom seg sjølv,
-          og tilkopla alle komponentar som CPU/hjernen, GPU ram og så videre. </p>
+        <p>Hovudkort introduksjon. Eit hovudkort er på ein måte ein tom kropp som barre har muskel og bein.
+           Kroppen din har som ansvar å sirkulere energi som du bruker til å bevege deg. Kroppen din kobraer og alt saman med kablar/blodåre.
+           Dette gjer nemleg hovudkorte og den er med på å sirkulere strøym gjennom seg sjølv, og tilkopla alle komponentar som CPU/hjernen, GPU ram og så videre.   </p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/0lCnzyFHyjc?si=h0rFt2knNdhOILiz" 
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <p>I denne modulen vil du lære:</p>
-	            <li>Ka et hovudkort er</li> 
+	            <li>Kva et hovudkort er</li> 
 	            <li>Typar hovudkort</li>
 	            <li>Størrelse ATX</li>
 	            <li>vanlige porter på hovudkort</li>
@@ -29,15 +28,15 @@
 
       <div id="kap2">
         <h2>Ka er eit Hovudkort</h2>
-        <p>Hovudkorte kort forklart er på enn måte eit medium som blir brukt til å kommunisere mellom dei elektroniske komponentane i  eit
-           utvid bart pc system. Når man snakker om hovudkort kommer orde PCB ofte opp. Eit hovudkort er ein PCB barre at den kobler sammen komponenter utenfor segsjøl og.
-            I ATX standard hovudkort kan alltids finne ein
-           CPU-sokkel, Memory-slot, I/O, CMOS og system klokke, PCH(eller AMD chipset) og eit temperatur-system, CPU & MB PWR port.
-           Så eit hovudkort er eit komponent i din datamaskin som tilknytte alle dei elektroniske komponentane i din datamaskin.</p>
+        <p>Hovudkorte kort forklart er på ein måte eit medium som blir brukt til å kommunisere mellom dei elektroniske komponentane i  eit utvid bart pc system.
+           I ATX standard hovudkort kan alltids finne ein CPU-sokkel, Memory-slot, I/O, CMOS og system klokke, PCH(eller AMD chipset)
+            og eit temperatur-system, CPU & MB PWR port.
+           Så eit hovudkort er eit komponent i din datamaskin som tilknytte alle dei elektroniske komponentane i din datamaskin. </p>
            <div class="summerert">
             <button class="dropdown-btn" id="CPU" onclick="droptext('CPU')">CPU-socket</button>
               <div class="dropdown-content" id="CPUdrop">
-                <p>AM-AMD og LGA -intel er dei mest populære standarane for CPU. LGA(Land Grid Array) er  ein type CPU-sokkel der sokkelen har kontaktar(lands) på sokkelen i stadet for sjølve CPU-en.
+                <p>AM-AMD og LGA -intel er dei mest populære standarane for CPU. LGA(Land Grid Array)
+                   er  ein type CPU-sokkel der sokkelen har kontaktar(lands) på sokkelen i stadet for sjølve CPU-en.
                    CPU frå AMD er litt annleis med at dei bruker PGA (Pin Grid Array). PGA blir bruk i AM4, PGA er når Sokkelen har pins og ikkje CPU-en.</p>
               </div><br>
 
@@ -47,7 +46,8 @@
                   DIMM står for Dual Inline Memory Module, Dual er fordi den kommunisere med 2 slot på gongen. 
                   DIMM er for RAM det er ulike versjonar av DIMM som barre støtter den same versjon RAM pinne.
                    Versjonane av DIMM er DDR1-5 du kan ikkje bruke ein DDR4 RAM-pinne på ein DIMM som støtter DDR5. 
-                   typer DIMM er UDIMM(brukt i laptop og stasjonær pc), FB-DIMM(brukt i server og datamaskiner som trenger større minne), RDIMM(brukt i serverer som trenger stabilitet).
+                   typer DIMM er UDIMM(brukt i laptop og stasjonær pc), FB-DIMM(brukt i server og datamaskiner som trenger større minne),
+                    RDIMM(brukt i serverer som trenger stabilitet).
                    Andre typer er LRDIMM SO-DIMM og MicroDIMM.</p>
               </div><br>
 
@@ -58,9 +58,12 @@
                    x16 blir vanlig viss brukt til video kort GPU, x8 ofte brukt til M.2/SSD expansion kort, </p>
               </div><br>
 
-            <button class="dropdown-btn" id="IO" onclick="droptext('IO')">Input / Output</button>
+            <button class="dropdown-btn" id="IO" onclick="droptext('IO')">I/O & I/O kontroller</button>
               <div class="dropdown-content" id="IOdrop">
-                <p>Input/output system brukt i alle ATX hovudkort for porter til eksterne system .Eksemplar USB, Display, Lyd, RJ45 port OSV</p>
+                <p>Input/output system brukt i alle ATX hovudkort for porter til eksterne system .Eksemplar USB, Display, Lyd, RJ45 port OSV.
+                   I/O kontroller finner du i PCH-en,
+                   I/O kontroller tar av seg kommunikasjon mellom eksterne inputs og outputs som blir tilkopla. 
+                </p>
               </div><br>
               
             <button class="dropdown-btn" id="CMOS" onclick="droptext('CMOS')">CMOS</button>
@@ -86,21 +89,32 @@
             
             <button class="dropdown-btn" id="PWR" onclick="droptext('PWR')">MB PWR og CPU PWR</button>
             <div class="dropdown-content" id="PWRdrop">
-              <p>	Port til strøym til MB og CPU frå PSU</p>
+              <p>	Port til strøym til ATX og CPU frå PSU</p>
+            </div><br>
+
+            <button class="dropdown-btn" id="panel" onclick="droptext('panel')">Case-panel Porter</button>
+            <div class="dropdown-content" id="paneldrop">
+              <p><li>FPH(front panel header) den inkludere SW(strøym knapp),
+                 RESET(reset knapp), Power LED(Lys til kabinett tilkopling), 
+                 HDD LED(HDD aktivitet lys). Kort forklart FPH er sånn at du kan 	skru av stasjonær lett med knapp på kabinettet ditt.</li><br>
+                <li>HD-audio for audio port på kabinettet</li> <br>
+                <li>USB FPH er representert i bilde av JUSB1-4. Brukt for USB tilkopling i kabinettet</li><br></p>
             </div><br>
       </div>
       <div class="bilde">
-        <img src="images-video/mbcolorbox.png" alt="" width="100%">
+        <p>Trykk på bilde nedanfor for å gjere det støre</p>
+        <a href="https://i.imgur.com/VmENEUc.png" target="_blank" id="imageresize"><img src="images-video/hovudkort.png" alt="" width="100%"></a>
+        
         <a href="#d"><button id="START">START</a></button>
       </div>
     </div>
 
       <div class="quiz" id="hideQ">
         <h2 id="Q"></h4>
-        <p class="quiz-btn" id="a"></p>
-        <p class="quiz-btn" id="b"></p>
-        <p class="quiz-btn" id="c"></p>
-        <p class="quiz-btn" id="d"></p> 
+          <p class="quiz-btn" onclick="checkAnswer('a')" id="a"></p>
+          <p class="quiz-btn" onclick="checkAnswer('b')" id="b"></p>
+          <p class="quiz-btn" onclick="checkAnswer('c')" id="c"></p>
+          <p class="quiz-btn" onclick="checkAnswer('d')" id="d"></p>
       </div>
 
   </div>

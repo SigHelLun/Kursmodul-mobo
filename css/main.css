@@ -70,11 +70,11 @@ background-color: #687EFF;
   overflow: hidden;
 }
 .summerert{
-width: 50%;
+width: 40%;
 float: left;
 }
 .bilde{
-  width: 50%;
+  width: 60%;
   float: right;
   
 }
@@ -88,48 +88,22 @@ float: left;
 
 .dropdown-btn {
   margin-top: 1rem;
-  background-color: #e6e2e2;
-  color: black;
+  background-color: #687EFF;
+  color: rgb(255, 255, 255);
   padding: 0.6rem;
   cursor: pointer;
   width: 80%;
   font-size: medium;
   border-radius: 0.6rem;
+  border: none;
 
 }
-#CPU{
-  border: none;
-  background-color: lightgreen;
+.bilde #imageresize{
+  cursor:zoom-in;
 }
-#Memory-slot{
-  
-  background-color: #a268ff;
-  border: none;
-}
-#IO{
-  border: none;
-  border-color: lightblue;
-}
-#CMOS{
-  border: none;
-}
-#Temp{
-  border: none;
-}
-#clock{
-  background-color: rgb(248, 68, 13);
-  border: none;
-  ;}
-#PCH{
-  background-color: rgb(209, 141, 40);
-  border: none;}
-#PWR{
-  background-color: yellow;
-  border: none;}
-
-#BUS{
-  background-color: rgb(255, 56, 222);
-  border: none;
+.bilde p{
+  text-align: center;
+  font-size: large;
 }
 /* quiz neddover */
 .quiz {
@@ -155,6 +129,6 @@ float: left;
   text-align: center;
   cursor: pointer;
 }
-#hideQ{
+/* #hideQ{
   display: none;
-}
+} */
