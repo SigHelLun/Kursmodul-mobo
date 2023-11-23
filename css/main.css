@@ -115,6 +115,7 @@ float: left;
   background-color: #ffff;
   padding: 1rem 4rem;
   border-radius: 0.6rem;
+  height: 30rem;
 
 }
 .quiz-btn {
@@ -129,6 +130,33 @@ float: left;
   text-align: center;
   cursor: pointer;
 }
-/* #hideQ{
-  display: none;
-} */
+
+.final{
+  margin: auto;
+  width: 20%;
+  padding: 1rem;
+  transition: background-color 0.5 ease;
+  color: #ffffff;
+
+}
+.final h1{
+  font-size: 4rem;
+  text-align: center;
+  background-color: #687EFF;
+  border-radius: 70rem;
+
+}
+.final p{
+padding: 0.5rem 1rem;
+border-radius: 0.6rem;
+}
+.final #wrong{
+  background-color: red;
+
+}
+.final #right{
+  background-color: green;
+}
+.final img{
+  width: 70%;
+}

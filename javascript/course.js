@@ -1,3 +1,4 @@
+//this is the wuiz I put it all inside an array so it's easy to change and add to
 const myQuiz = [
   {
     question: "Kva er eit Hovudkort?",
@@ -100,34 +101,41 @@ const myQuiz = [
     correctAnswer: 'd'
   }
 ];
-
+//grab elemtents I need for the code
 const hiding = document.getElementById("hideQ");
-const questionElem = document.getElementById("Q");
-const aElem = document.getElementById("a");
-const bElem = document.getElementById("b");
-const cElem = document.getElementById("c");
-const dElem = document.getElementById("d");
-
+const question = document.getElementById("Q");
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+const c = document.getElementById("c");
+const d = document.getElementById("d");
+const finalR = document.getElementById("finalAnswer")
+const result = document.getElementById("results")
+const right = document.getElementById("right")
+const wrong = document.getElementById("wrong")
+//poeng holder and, currQnum that holds the current question number instead of [0-10]
 let poeng = 0;
 let currQnum = 0;
-
+//loads the questions. takes myquiz and changes the innerhtml of the html elements to the current question and answer choices
 function loadQuestion() {
-  const currentQuestion = myQuiz[currQnum];
-  questionElem.innerHTML = currentQuestion.question;
-  aElem.innerHTML = currentQuestion.answers.a;
-  bElem.innerHTML = currentQuestion.answers.b;
-  cElem.innerHTML = currentQuestion.answers.c;
-  dElem.innerHTML = currentQuestion.answers.d;
+  const currQuest = myQuiz[currQnum];
+  question.innerHTML = currQuest.question;
+  a.innerHTML = currQuest.answers.a;
+  b.innerHTML = currQuest.answers.b;
+  c.innerHTML = currQuest.answers.c;
+  d.innerHTML = currQuest.answers.d;
 }
-
+//hide finalR
+finalR.style.display = "none"
+//chackanswer point system
 function checkAnswer(selectedOption) {
-  const currentQuestion = myQuiz[currQnum];
-
-  if (selectedOption === currentQuestion.correctAnswer) {
+  //I had to put this const here becauce it didn't work otherwise
+  const currQuest = myQuiz[currQnum];
+  //give point if correct
+  if (selectedOption === currQuest.correctAnswer) {
     poeng += 1;
-    console.log("Correct! Score: " + poeng);
+    console.log("riktig: " + poeng);
   } else {
-    console.log("Incorrect! Score: " + poeng);
+    console.log("feil: " + poeng);
   }
 
   currQnum++;
@@ -135,73 +143,40 @@ function checkAnswer(selectedOption) {
   if (currQnum < myQuiz.length) {
     loadQuestion();
   } else {
-    hiding.style.display = "none";
+    finalAnswers()
   }
+}
+//final answer gives you the final results
+function finalAnswers(){
+  let feil = 10 - poeng
+  hiding.style.display = "none"
+  finalR.style.display = "block"
+  result.innerHTML = "%" + poeng + "0"
+  wrong.innerHTML = "Du har " + feil + " feil av 10"
+  right.innerHTML = "Du har " + poeng + " riktig av 10"
 }
 
 // Start the quiz
-hiding.style.display = "block";
+
 loadQuestion();
 
-/*   function start() {
-      hiding.style.display = "block"
-      question.innerHTML = myQuiz[0].question;
-      a.innerHTML = myQuiz[0].answers.a;
-      b.innerHTML = myQuiz[0].answers.b;
-      c.innerHTML = myQuiz[0].answers.c;
-      d.innerHTML = myQuiz[0].answers.d;
-      
-      P1 = a.addEventListener("click", A1)
-      qNext = a.addEventListener("click", q2) ||
-       b.addEventListener("click", q2) || 
-       c.addEventListener("click", q2) || 
-       d.addEventListener("click", q2);
-    };
-    function A1(){
-      if(a.innerHTML === myQuiz[0].answers.a){
-      poeng += 1
-      console.log(poeng)
-    };}
-    function A2() {
-      if(c.innerHTML === myQuiz[1].answers.c){
-        poeng += 1
-        console.log(poeng)
-      }      
-    }
 
-    function q2(){
-      question.innerHTML = myQuiz[1].question;
-      a.innerHTML = myQuiz[1].answers.a;
-      b.innerHTML = myQuiz[1].answers.b;
-      c.innerHTML = myQuiz[1].answers.c;
-      d.innerHTML = myQuiz[1].answers.d;
-      qNext = a.addEventListener("click", q3) ||
-      b.addEventListener("click", q3) || 
-      c.addEventListener("click", q3) || 
-      d.addEventListener("click", q3);
-      P1 = c.addEventListener("click", A2)
-    }
-    function q3(){
-      question.innerHTML = myQuiz[2].question;
-      a.innerHTML = myQuiz[2].answers.a;
-      b.innerHTML = myQuiz[2].answers.b;
-      c.innerHTML = myQuiz[2].answers.c;
-      d.innerHTML = myQuiz[2].answers.d;
-    } */
- 
-
-
-
-
-
-  //dropdown box code
+  //dropdown box code, code for the dropdown effect for the info boxes
   function droptext(downID) {
     let dropElement = document.getElementById(downID + "drop");
   
+    // Close all dropdowns
+    const allDropdowns = document.querySelectorAll('.dropdown-content');
+    allDropdowns.forEach(dropdown => {
+      if (dropdown.id !== downID + "drop") {
+        dropdown.style.display = "none";
+      }
+    });
+  
+    // Toggle the clicked dropdown
     if (dropElement.style.display === "block") {
       dropElement.style.display = "none";
     } else {
       dropElement.style.display = "block";
     }
   }
-  
