@@ -91,14 +91,45 @@ float: left;
   background-color: #e6e2e2;
   color: black;
   padding: 0.6rem;
-  border: none;
   cursor: pointer;
   width: 80%;
   font-size: medium;
   border-radius: 0.6rem;
 
 }
+#CPU{
+  border-color: lightgreen;
+  background-color: lightgreen;
+}
+#Memory-slot{
+  
+  background-color: #a268ff;
+  border-color: #a268ff;
+}
+#IO{
+  background-color: lightblue;
+  border-color: lightblue;
+}
+#CMOS{
+  border: none;
+}
+#Temp{
+  border: none;
+}
+#clock{
+  background-color: rgb(248, 68, 13);
+  border-color: rgb(248, 68, 13);}
+#PCH{
+  background-color: rgb(209, 141, 40);
+  border-color: rgb(209, 141, 40);}
+#PWR{
+  background-color: yellow;
+  border-color: yellow;}
 
+#BUS{
+  background-color: rgb(255, 56, 222);
+  border-color: rgb(255, 56, 222);
+}
 /* quiz neddover */
 .quiz {
   display: block;

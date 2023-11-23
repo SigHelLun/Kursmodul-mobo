@@ -20,24 +20,49 @@ const myQuiz = [
       correctAnswer: 'c'
     }
   ];
+  
+  const SrtBtn = document.getElementById("START")
   const hiding = document.getElementById("hideQ")
   const question = document.getElementById("Q");
   const a = document.getElementById("a");
   const b = document.getElementById("b");
   const c = document.getElementById("c");
   const d = document.getElementById("d");
-  
+  let poeng = 0;
+  let P1;
+  let qNext;
+ 
+  const Q1 = SrtBtn.addEventListener("click", start);
+
+
   function start() {
-    if (question.innerHTML === "") {
       hiding.style.display = "block"
       question.innerHTML = myQuiz[0].question;
       a.innerHTML = myQuiz[0].answers.a;
       b.innerHTML = myQuiz[0].answers.b;
       c.innerHTML = myQuiz[0].answers.c;
       d.innerHTML = myQuiz[0].answers.d;
+      
+      P1 = a.addEventListener("click", A1)
+      qNext = a.addEventListener("click", q2) ||
+       b.addEventListener("click", q2) || 
+       c.addEventListener("click", q2) || 
+       d.addEventListener("click", q2);
+    };
+    function A1(){
+      if(a.innerHTML === myQuiz[0].answers.a){
+      poeng += 1
+      console.log(poeng)
+    };
+  };
+    function q2(){
+      question.innerHTML = myQuiz[1].question;
+      a.innerHTML = myQuiz[1].answers.a;
+      b.innerHTML = myQuiz[1].answers.b;
+      c.innerHTML = myQuiz[1].answers.c;
+      d.innerHTML = myQuiz[1].answers.d;
     }
-  }
-  
+
   //dropdown box code
   function droptext(downID) {
     let dropElement = document.getElementById(downID + "drop");
