@@ -112,6 +112,7 @@ const finalR = document.getElementById("finalAnswer")
 const result = document.getElementById("results")
 const right = document.getElementById("right")
 const wrong = document.getElementById("wrong")
+const confetti = document.getElementById("quiz")
 //poeng holder and, currQnum that holds the current question number instead of [0-10]
 let poeng = 0;
 let currQnum = 0;
@@ -154,6 +155,9 @@ function finalAnswers(){
   result.innerHTML = "%" + poeng + "0"
   wrong.innerHTML = "Du har " + feil + " feil av 10"
   right.innerHTML = "Du har " + poeng + " riktig av 10"
+  if(poeng > 8 || peong === 8){
+    document.body.style.backgroundImage = "url('images-video/confetti-40-1987904247.gif')";
+  };
 }
 
 // Start the quiz
