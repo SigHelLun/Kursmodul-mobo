@@ -82,7 +82,7 @@ float: left;
 .dropdown-content {
   display: none;
   padding: 0.2rem 1rem;
-  width: 50%;
+  width: 80%;
 }
 
 
@@ -98,16 +98,16 @@ float: left;
 
 }
 #CPU{
-  border-color: lightgreen;
+  border: none;
   background-color: lightgreen;
 }
 #Memory-slot{
   
   background-color: #a268ff;
-  border-color: #a268ff;
+  border: none;
 }
 #IO{
-  background-color: lightblue;
+  border: none;
   border-color: lightblue;
 }
 #CMOS{
@@ -118,17 +118,18 @@ float: left;
 }
 #clock{
   background-color: rgb(248, 68, 13);
-  border-color: rgb(248, 68, 13);}
+  border: none;
+  ;}
 #PCH{
   background-color: rgb(209, 141, 40);
-  border-color: rgb(209, 141, 40);}
+  border: none;}
 #PWR{
   background-color: yellow;
-  border-color: yellow;}
+  border: none;}
 
 #BUS{
   background-color: rgb(255, 56, 222);
-  border-color: rgb(255, 56, 222);
+  border: none;
 }
 /* quiz neddover */
 .quiz {

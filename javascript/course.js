@@ -18,7 +18,18 @@ const myQuiz = [
         d: 'LGA 1200'
       },
       correctAnswer: 'c'
-    }
+    },
+    {
+      question: "Kva er Hovudkorte sinn oppgåve?",
+      answers: {
+        a: 'Å gi strøym til CPU-en',
+        b: 'Gi strøym til komponentar i PC-en',
+        c: 'Å koble saman alle CPU-ane',
+        d: 'Sette opp kommunikasjon mellom alle komponentane i PC-en med MB som medium'
+      },
+      correctAnswer: 'c'
+    },
+    
   ];
   
   const SrtBtn = document.getElementById("START")
@@ -61,6 +72,17 @@ const myQuiz = [
       b.innerHTML = myQuiz[1].answers.b;
       c.innerHTML = myQuiz[1].answers.c;
       d.innerHTML = myQuiz[1].answers.d;
+      qNext = a.addEventListener("click", q3) ||
+      b.addEventListener("click", q3) || 
+      c.addEventListener("click", q3) || 
+      d.addEventListener("click", q3);
+    }
+    function q3(){
+      question.innerHTML = myQuiz[2].question;
+      a.innerHTML = myQuiz[2].answers.a;
+      b.innerHTML = myQuiz[2].answers.b;
+      c.innerHTML = myQuiz[2].answers.c;
+      d.innerHTML = myQuiz[2].answers.d;
     }
 
   //dropdown box code
