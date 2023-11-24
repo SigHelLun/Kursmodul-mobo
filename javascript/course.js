@@ -108,11 +108,12 @@ const a = document.getElementById("a");
 const b = document.getElementById("b");
 const c = document.getElementById("c");
 const d = document.getElementById("d");
-const finalR = document.getElementById("finalAnswer")
-const result = document.getElementById("results")
-const right = document.getElementById("right")
-const wrong = document.getElementById("wrong")
-const confetti = document.getElementById("quiz")
+const finalR = document.getElementById("finalAnswer");
+const result = document.getElementById("results");
+const right = document.getElementById("right");
+const wrong = document.getElementById("wrong");
+const confetti = document.getElementById("quiz");
+const faildone = document.getElementById("feiledOrdone")
 //poeng holder and, currQnum that holds the current question number instead of [0-10]
 let poeng = 0;
 let currQnum = 0;
@@ -147,17 +148,24 @@ function checkAnswer(selectedOption) {
     finalAnswers()
   }
 }
+
 //final answer gives you the final results
 function finalAnswers(){
+  document.getElementById("gifcrown").src="images-video/sad.png"
   let feil = 10 - poeng
   hiding.style.display = "none"
   finalR.style.display = "block"
-  result.innerHTML = "%" + poeng + "0"
+  result.innerHTML = poeng + "0" + "%"
   wrong.innerHTML = "Du har " + feil + " feil av 10"
   right.innerHTML = "Du har " + poeng + " riktig av 10"
+
   if(poeng > 8 || peong === 8){
     document.body.style.backgroundImage = "url('images-video/confetti-40-1987904247.gif')";
-  };
+    faildone.innerHTML = "Du har beståt"
+  }
+  if(poeng > 7){
+    
+  }
 }
 
 // Start the quiz
