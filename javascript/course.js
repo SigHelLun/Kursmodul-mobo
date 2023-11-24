@@ -113,7 +113,7 @@ const result = document.getElementById("results");
 const right = document.getElementById("right");
 const wrong = document.getElementById("wrong");
 const confetti = document.getElementById("quiz");
-const faildone = document.getElementById("feiledOrdone")
+const faildone = document.getElementById("failedOrdone");
 //poeng holder and, currQnum that holds the current question number instead of [0-10]
 let poeng = 0;
 let currQnum = 0;
@@ -151,7 +151,6 @@ function checkAnswer(selectedOption) {
 
 //final answer gives you the final results
 function finalAnswers(){
-  document.getElementById("gifcrown").src="images-video/sad.png"
   let feil = 10 - poeng
   hiding.style.display = "none"
   finalR.style.display = "block"
@@ -159,15 +158,20 @@ function finalAnswers(){
   wrong.innerHTML = "Du har " + feil + " feil av 10"
   right.innerHTML = "Du har " + poeng + " riktig av 10"
 
-  if(poeng > 8 || peong === 8){
+  if (poeng > 8 || poeng === 8) {
     document.body.style.backgroundImage = "url('images-video/confetti-40-1987904247.gif')";
-    faildone.innerHTML = "Du har beståt"
-  }
-  if(poeng > 7){
-    
+    faildone.innerHTML = "Du har bestått";
+    faildone.innerHTML = "Du besto testen med " + poeng +"0%";
+  } else {
+    youlose();
   }
 }
+function youlose(){
 
+  document.getElementById("gifcrown").src="images-video/sad.png"
+  faildone.innerHTML = "Du trenger minst 80% for og bestå"
+
+}
 // Start the quiz
 
 loadQuestion();

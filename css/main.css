@@ -138,7 +138,7 @@ float: left;
   color: #ffffff;
 
 }
-.final h1{
+.final #results{
   font-size: 3rem;
   text-align: center;
   background-color: #687EFF;
@@ -158,4 +158,9 @@ border-radius: 0.6rem;
 }
 .final img{
   width: 100%;
+}
+.final #failedOrdone{
+  background-color: #687EFF;
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
 }
