@@ -163,10 +163,12 @@ function finalAnswers() {
       "url('images-video/confetti-40-1987904247.gif')";
     faildone.innerHTML = "Du har bestått";
     faildone.innerHTML = "Du besto testen med " + poeng + "0%";
-  } else {
+    document.getElementById("gifcrown").src = "images-video/crown2.gif";
+  } else
     youlose();
-  }
-}
+
+};
+
 function youlose() {
   document.getElementById("gifcrown").src = "images-video/sad.png";
   faildone.innerHTML = "Du trenger minst 80% for og bestå";
